@@ -7,7 +7,7 @@ const RecipesController = require('../controllers/RecipesController');
 const UserController = require('../controllers/UsersController');
 
 //  user routes
-router.get('/login', UserController.login);
+router.post('/login', UserController.login);
 
 // recipes routes
 router.post('/recipes', authenticateToken, RecipesController.create);
