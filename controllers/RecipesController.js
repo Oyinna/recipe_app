@@ -143,7 +143,7 @@ const RecipesController = {
     } catch (err) {
       return res.status(500).send({
         success: false,
-        message: 'An error occured while updating recipes',
+        message: 'An error occured while updating recipe',
       });
     }
   },
